@@ -1,0 +1,800 @@
+Module 3 HTML
+
+1.Are the HTML tags and elements the same thing?
+
+ ANS:
+ HTML tags are used to hold the HTML element. HTML element holds the content.
+ HTML attributes are used to describe the characteristic of an HTML element in detail. 
+ Whatever written within a HTML tag are HTML elements.
+
+ 2.What are tags and attributes in HTML?
+
+ ANS: 
+ HTML tags are used to hold the HTML element. HTML element holds the content. 
+ HTML attributes are used to describe the characteristic of an HTML element in detail. 
+ HTML tag starts with < and ends with > Whatever written within a HTML tag are HTML elements.
+
+ 3.What are void elements in HTML? With Example.
+
+ ANS:
+  A void element is an element whose content model never allows it to have contents under any circumstances.
+  Void elements can have attributes. The following is a complete list of the void elements in HTML : 
+  area , base , br , col , command , embed , hr , img , input , keygen , link , meta , param , source , track , wbr.
+
+  Example:
+  <html>
+  
+  <body>
+    <h2 style="color:green">GeeksforGeeks</h2>
+    <input type="text" placeholder="Enter name...">    
+  </body>
+  </html> 
+  
+
+  4.What are HTML Entities? With Example.
+
+  ANS:
+   Some characters are reserved in HTML.
+   If you use the less than (<) or greater than (>) signs in your text, the browser might mix them with tags.
+   Character entities are used to display reserved characters in HTML.
+
+   Example:
+   <!DOCTYPE html>
+   <html>
+   <body>
+   
+   <h1>HTML Entity Example</h1>
+   <h2>A space character: &nbsp;</h2>
+   <h2>The less-than sign: &lt;</h2>
+   <h2>The greater-than sign: &gt;</h2>
+   <h2>The ampersand (and) sign: &amp;</h2>
+   <h2>The double quote sign: &quot;</h2>
+   <h2>The single quote sign: &apos;</h2>
+   <h2>The cent sign: &cent;</h2>
+   <h2>The pound sign: &pound;</h2>
+   <h2>The pound sign: &pound;</h2>
+   <h2>The yen sign: &yen;</h2>
+   <h2>The copyright sign: &copy;</h2>
+   <h2>The registered trade mark sign: &reg;</h2>
+   
+   </body>
+   </html>
+
+   5.What are different types of lists in HTML? With Example.
+
+   ANS:
+   .unordered list — used to group a set of related items in no particular order.
+   .ordered list — used to group a set of related items in a specific order.
+   .Description list — used to display name/value pairs such as terms and definitions.
+
+   Example:
+   <!-- unordered list -->
+   <ul>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ul>
+
+  <!-- ordered list  -->
+  <ol>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ol>
+
+  <!-- Description list -->
+  <dl>
+    <dt>Coffee</dt>
+    <dd>- black hot drink</dd>
+    <dt>Milk</dt>
+    <dd>- white cold drink</dd>
+  </dl>
+
+  6.What is the ‘class’ attribute in HTML? With Example.
+
+  ANS:
+  The class attribute specifies one or more classnames for an element.
+  The class attribute is mostly used to point to a class in a style sheet.
+  However, it can also be used by a JavaScript (via the HTML DOM) to make changes to HTML elements with a specified class.
+
+  Example:
+  <html>
+    <head>
+    <style>
+    h1.intro {
+      color: blue;
+    }
+    
+    p.important {
+      color: green;
+    }
+    </style>
+    </head>
+    <body>
+    
+    <h1 class="intro">Header 1</h1>
+    <p class="important">header2</p>
+    
+    </body>
+    </html>
+
+    7.What is the difference between the ‘id’ attribute and the ‘class’ attribute of HTML
+    elements? With Example.
+
+    ANS:
+     Remember the difference between Class and ID: A Class name can be used by multiple HTML elements,
+     while an ID name must only be used by one HTML element within the page.
+
+     Example:
+     <!DOCTYPE html>
+     <html>
+     <head>
+     <style>
+     
+     #myHeader {
+       background-color: lightblue;
+       color: black;
+       padding: 40px;
+       text-align: center;
+     }
+     
+     
+     .city {
+       background-color: tomato;
+       color: white;
+       padding: 10px;
+     } 
+     </style>
+     </head>
+     <body>
+     
+     
+     <h1 id="myHeader">My Cities</h1>
+     
+     <h2 class="city">London</h2>
+     <p>London is the capital of England.</p>
+     
+     <h2 class="city">Paris</h2>
+     <p>Paris is the capital of France.</p>
+     
+     <h2 class="city">Tokyo</h2>
+     <p>Tokyo is the capital of Japan.</p>
+     
+     </body>
+     </html>
+
+     8.• What are the various formatting tags in HTML?
+
+     ANS:
+      <b> - Bold text
+     <strong> - Important text
+     <i> - Italic text
+     <em> - Emphasized text
+     <mark> - Marked text
+     <small> - Smaller text
+     <del> - Deleted text
+     <ins> - Inserted text
+     <sub> - Subscript text
+     <sup> - Superscript text
+
+     9.How is Cell Padding different from Cell Spacing? With Example.
+     
+     ANS:
+     Cellpadding basically defines the space present between a table cell's border and the content present in it. Cellspacing basically defines the space present between individual adjacent cells.
+     One can create it using the tag of HTML <table>, but it sets the type attribute to cellpadding.
+
+    Example:
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <style>
+    
+    th, td {
+      padding: 15px;
+    }
+    table {
+      border-spacing: 30px;
+    }
+    </style>
+    </head>
+    <body>
+    
+    <h2>Cellpadding</h2>
+    <p>Cell padding specifies the space between the cell content and its borders.</p>
+    
+    <table border="3" style="width:100%">
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th> 
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+      </tr>
+     
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        
+      </tr>
+    </table>
+    
+    <h2>Cellspacing</h2>
+    <p>Change the space between the cells with the border-spacing property.</p>
+    
+    <table  border="3"style="width:100%">
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th> 
+        
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        
+      </tr>
+    </table>
+  
+    10. How can we club two or more rows or columns into a single row or column in an HTML
+    table? With Example
+
+    ANS:
+    We use the colspan and rowspan attribute, to merge cells in HTML. The rowspan attribute is for the number of rows a cell should merge,
+    whereas the colspan attribute is for the number of columns a cell should merge. The attribute should be placed inside the <td> tag.
+
+    ANS:
+    <!DOCTYPE html>
+    <html>
+       <style>
+          table,tr,th,td {
+             border:1px solid black;
+          }
+       </style>
+    <body>
+       <h2>Tables in HTML</h2>
+       <table style="width: 100%">
+          <tr>
+             <th >First Name </th>
+             <th>Job role</th>
+          </tr>
+          <tr>
+             <td >Tharun</td>
+             <td rowspan="2">Content writer</td>
+          </tr>
+          <tr>
+             <td >Akshaj</td>
+          </tr>
+          <tr>
+             <td colspan="2">Welcome to the company</td>
+          </tr>
+       </table>
+
+       11.What is the difference between a block-level element and an inline element?
+
+       ANS:
+       A block-level element always starts on a new line, and the browsers automatically add some space (a margin) before and after the element.
+       A block-level element always takes up the full width available (stretches out to the left and right as far as it can).
+       Two commonly used block elements are: <p> and <div>.
+
+       An inline element does not start on a new line.
+       An inline element only takes up as much width as necessary.
+       This is a <span> element inside a paragraph.
+ 
+        Example:
+        <!DOCTYPE html>
+        <html>
+        <body>
+            <!-- block-level element -->
+        <p style="border: 1px solid black">Hello World</p>
+        <div style="border: 1px solid black">Hello World</div>
+          <!-- inline element -->
+        <p>This is an inline span <span style="border: 1px solid black">Hello World</span> element inside a paragraph.</p>
+        </body>
+        </html>
+       </body>
+       </html>
+
+      12.How to create a Hyperlink in HTML? With Example
+
+       ANS:
+      HTML links are hyperlink You can click on a link and jump to another document.
+      When you move the mouse over a link, the mouse arrow will turn into a little hand.
+
+     Example:
+     <!DOCTYPE html>
+     <html>
+     <body>
+     <h1>HTML Links</h1>
+     <p><a href="https://www.w3schools.com/">Visit W3Schools.com!</a></p>
+     </body>
+     </html>
+
+     13.What is the use of an iframe tag? With Example
+
+     ANS:
+     The <iframe> tag specifies an inline frame.
+     An inline frame is used to embed another document within the current HTML document.
+
+    Example:
+         <!DOCTYPE html>
+         <html>
+         <body>
+         
+         <h1>The iframe element</h1>
+         
+         <iframe src="https://www.w3schools.com" title="W3Schools Free Online Web Tutorials">
+         </iframe>
+         
+         </body>
+         </html>
+ 
+         14.What is the use of a span tag? Explain with example?
+
+         ANS:
+         The <span> tag is an inline container used to mark up a part of a text, or a part of a document.
+        The <span> tag is easily styled by CSS or manipulated with JavaScript using the class or id attribute.
+        The <span> tag is much like the <div> element, but <div> is a block-level element and <span> is an inline element.
+
+         example:<!DOCTYPE html>
+         <html>
+         <body>
+         
+         <p>My mother has <span style="color:blue;font-weight:bold">blue</span> eyes and my father has <span style="color:darkolivegreen;font-weight:bold">dark green</span> eyes.</p>
+         
+         </body>
+         </html>
+         
+        15.How to insert a picture into a background image of a web page? With Example.
+
+      ANS:
+       a background image can be specified for almost any HTML element.
+       To add a background image on an HTML element, use the HTML style attribute and the CSS background-image property
+
+     example:
+     <!DOCTYPE html>
+     <html>
+     <body>
+     
+     <h2>Background Image</h2>
+     
+     <p>A background image for a p element:</p>
+     
+     <p style="background-image: url('img_girl.jpg');">
+     You can specify background images<br>
+     for any visible HTML element.<br>
+     In this example, the background image<br>
+     is specified for a p element.<br>
+     By default, the background-image<br>
+     will repeat itself in the direction(s)<br>
+     where it is smaller than the element<br>
+     where it is specified. (Try resizing the<br>
+     browser window to see how the<br>
+     background image behaves.
+     </p>    
+     </body>
+     </html>
+
+     16.How are active links different from normal links?
+
+     ANS:
+      Those that don't have a mouse cursor over that link is considered a normal link. Some browser
+      recognize active links when the mouse cursor is placed over that link. Others recognize active links 
+      when the link has the focus.Those that do not have mouse cursor over the link is said to be normal link.
+
+    17.What are the different tags to separate sections of text?
+
+    ANS:
+     <br>  tag – It is used to separate the line of text. It breaks the current line and shifts the flow of the text to a new line.
+    <p> tag–This tag is used to write a paragraph of text.
+    <blockquote> tag–This tag is used to define large quoted sections.
+
+     18.What is SVG?
+
+     ANS:
+     SVG stands for Scalable Vector Graphics.
+     SVG defines vector-based graphics in XML format.
+     SVG is a language for describing 2D graphics in XML. Canvas draws 2D graphics, on the fly (with a JavaScript). SVG is XML based, which means that every element is available within the SVG DOM
+     You can attach JavaScript event handlers for an element. In SVG, each drawn shape is remembered as an object
+
+     19.What is difference between HTML and XHTML?
+
+     ANS:
+     HTML stands for Hypertext Markup Language, whereas XHTML stands for Extensible Hypertext Markup Language. XHTML is basically an extension of HTML, which is stricter than HTML. 
+     Both languages are used to create web and Android applications. HTML is SGML based, whereas XHTML is an XML-based language.
+     
+     20.What are logical and physical tags in HTML?
+
+     ANS:
+      In HTML the formatting tags are divided into two categories: Physical tag: These tags are used to provide the visual appearance to the text.
+      Logical tag: These tags are used to add some logical or semantic value to the text.
+    
+      <!-- physical tag -->
+    <b>	Defines bold text
+    <big>Defines big text
+    <i>	Defines italic text
+    <small>Defines small text
+    <sup>Defines superscripted text
+    <sub>Defines subscripted text
+    <tt>Defines teletype text
+     <u>Deprecated. Use styles instead
+
+     logical tag
+
+    <abbr>Defines an abbreviation
+    <acronym>Defines an acronym
+    <address>Defines an address element
+    <cite>Defines citation
+    <code>Defines computer code text
+    <blockquote>Defines a long quotation
+    <del>Defines text
+    <dfn>Defines a definition term
+    <ins>Defines inserted text
+    <kbd>Defines keyboard text
+    <pre>Defines preformatted text
+    <q>Defines short quotation
+    <samp>Defines sample computer code
+    <strong>Defines strong text
+    <var>Defines a variable 
+
+
+      Module 5) HTML5
+
+      1.What are the new tags added in HTML5?
+
+      ANS:
+        <article>	Used to specify a blog, a magazine or a newspaper article or any other independent piece of content in a document.
+        <aside>	Used to indicate that the specified article is somehow related to the rest of the document.
+        <bdi>	Used for bi-directional isolation, i.e, to isolate a part of a content which is formatted in other direction from the outside text document.
+        <data>	Used to facilitate a machine readable version of the data.
+        <details>	Used to define any additional information on a topic or a summary.
+        <dialog>	Used to specify a window or a dialog box.
+        <figcaption>	Used to specify a caption for a <figure> element.
+        <figure>	Used to specify a self-contained content like photos, diagrams etc.
+        <footer>	Used to specify a footer for a section.
+        <header>	Used to specify a header for a section.
+        <main>	Used to specify the main content of a document.
+        <mark>	Used to mark or highlight the specified content.
+        <meter>	Used to determine a scalar value within a given range.
+        <nav>	Used to specify a navigation link in an HTML document.
+        <progress>	Used to define the progress of a task.
+        <rp>	Used to specify the content to show in a browser that don’t support ruby annotation.
+        <rt>	Used to indicate an explanation or pronunciation of characters.
+        <ruby>	Used to specify a ruby annotation along with <rp> and <rt>.
+        <section>	Used to specify a section in an HTML document.
+        <summary>	Used to define a visible heading for the HTML <details> element.
+        <time>	Used to define a date or time.
+        <wbr>	Used to specify a line break opportunity.
+
+       2.How to embed audio and video in a webpage?
+
+      ANS:
+         Create a new HTML file in the same directory, called index. html . Add <audio> and <video> elements to the page;
+         make them display the default browser controls. Give both of them <source> elements so that browsers will find the audio
+         format they support best and load it. 
+
+         The controls attribute adds audio controls, like play, pause, and volume.
+
+         The <source> element allows you to specify alternative audio files which the browser may choose from. The browser will use the first recognized format.
+
+         The text between the <audio> and </audio> tags will only be displayed in browsers that do not support the <audio> element.
+ 
+        3. Semantic element in HTML5?
+
+        ANS:
+        A semantic element clearly describes its meaning to both the browser and the developer.
+
+        Examples of non-semantic elements: <div> and <span> - Tells nothing about its content.
+
+        Examples of semantic elements: <form>, <table>, and <article> - Clearly defines its content.
+
+        Many web sites contain HTML code like: <div id="nav"> <div class="header"> <div id="footer"> to indicate navigation, 
+          header, and footer. 
+            <article>
+            <aside>
+            <details>
+            <figcaption>
+            <figure>
+            <footer>
+            <header>
+            <main>
+            <mark>
+            <nav>
+            <section>
+            <summary>
+            <time>
+
+          4.Canvas and SVG tags
+
+          ANS:
+
+            The <svg> tag defines a container for SVG graphics. 
+            SVG has several methods for drawing paths, boxes, circles, text, and graphic images.   
+            
+            Definition and Usage. The <canvas> tag is used to draw graphics, on the fly, via scripting (usually JavaScript). The <canvas> tag is transparent, 
+            and is only a container for graphics, you must use a script to actually draw the graphics.
+
+
+
+  Module 4) CSS and CSS 3
+
+
+      1.What are the benefits of using CSS?
+
+      ANS:
+
+      1) Faster Page Speed
+      More code means slower page speed. And CSS enables you to use less code. CSS allows you to use one CSS rule and apply it
+      to all occurrences of a certain tag within an HTML document.
+      
+      2) Better User Experience
+      CSS not only makes web pages easy on the eye, it also allows for user-friendly formatting. When buttons and text are in
+      logical places and well organized, user experience improves.
+      
+      3) Quicker Development Time
+      With CSS, you can apply specific formatting rules and styles to multiple pages with one string of code. One cascading
+      style sheet can be replicated across several website pages. If, for instance, you have product pages that should all
+      have the same formatting, look, and feel, writing CSS rules for one page will suffice for all pages of that same type.
+      
+      4) Easy Formatting Changes
+      If you need to change the format of a specific set of pages, it’s easy to do so with CSS. There’s no need to fix every
+      individual page. Just edit the corresponding CSS stylesheet and you’ll see changes applied to all the pages that are
+      using that style sheet.
+      
+      5) Compatibility Across Devices
+      Responsive web design matters. In today’s day and age, web pages must be fully visible and easily navigable on all
+      devices. Whether mobile or tablet, desktop, or even smart TV, CSS combines with HTML to make responsive design possible.
+
+     
+       2.What are the disadvantages of CSS?
+
+       ANS:
+
+        CSS, CSS 1 up to CSS3, result in creating of confusion among web browsers.
+        
+        With CSS, what works with one browser might not always work with another. The web developers need to test for
+        compatibility, running the program across multiple browsers.
+        
+        There exists a scarcity of security.
+        
+        After making the changes we need to confirm the compatibility if they appear. The similar change affects on all the
+        browsers.
+        
+        The programming language world is complicated for non-developers and beginners. Different levels of CSS i.e. CSS, CSS 2,
+        CSS 3 are often quite confusing.
+        
+        Browser compatibility (some styles sheet are supported and some are not).
+        CSS works differently on different browsers. IE and Opera supports CSS as different logic.
+        
+        There might be cross-browser issues while using CSS.
+        
+        There are multiple levels which creates confusion for non-developers and beginners.
+
+     3.What is the difference between CSS2 and CSS3?
+
+     ANS:
+     
+
+
+     4.Name a few CSS style components
+
+     ANS:
+
+     1. Easily maintainable:
+            If you are intended to make any global change, change the styling, and you can see all other elements in all other web pages getting automatically updated.
+
+     2. CSS is time-saving:
+            You can write the script once and reuse the same sheet as much time as you want.
+
+     3. Superior styles to the native front end: 
+            CSS has a much wider array of attributes and lists than HTML. Therefore the HTML page can have a brighter look and feel than the normal HTML attributes.
+
+     4. Ease with Search Engines: 
+             CSS is a convenient and easy-to-read styling sheet. This means that search engines don’t have to put in much effort trying to read the text.
+            
+     5. Efficient cache storing:
+             CSS can store web applications locally with the help of an offline cache mechanism that can be used to view offline websites.       
+
+     5.What do you understand by CSS opacity?
+     
+     ANS:
+
+     The opacity CSS property sets the opacity of an element. Opacity is the degree to which content behind an element is hidden, and is the opposite of transparency.
+
+     The opacity in CSS is the property of an element that describes the transparency of the element. It is the opposite of transparency & represents the degree to which the content will be hidden behind an element.
+
+     Image Opacity: The opacity property is used in the image to describe the transparency of the image. The value of opacity lies between 0.0 to 1.0 where a low value represents high transparency and a high value represents low transparency. The percentage of opacity is calculated as Opacity% = Opacity * 100.
+
+    6.How can the background color of an element be changed?
+
+    ANS:
+
+    To add background color in HTML, use the CSS background-color property. Set it to the color name or code you want and place it inside a style attribute. Then add this style attribute to an HTML element, like a table, heading, div, or span tag.
+
+    The background-color property in CSS is used to set the background color of an element. It applies solid colors as the element's background. The background of an element covers the total size, including the padding and border, but excluding margin. It can be applied to all HTML elements.
+
+    7.How can image repetition of the backup be controlled?
+
+    ANS:
+
+    This task can be achieved by using the background-repeat property that will help us to control the repetition of the image. The background-repeat property in CSS is used to repeat the background image both horizontally and vertically. It also decides whether the background image will be repeated or not.
+
+    The background-repeat property in CSS is used to repeat the background image both horizontally and vertically. It also decides whether the background image will be repeated or not.
+
+    In this article, we will see how an image repetition of the backup is controlled in CSS. This task can be achieved by using the background-repeat property that will help us to control the repetition of the image.
+       
+    8.What is the use of the background-position property?
+
+    ANS:
+
+    The background-position property sets the starting position of a background image. Tip: By default, a background-image is placed at the top-left corner of an element, and repeated both vertically and horizontally.
+
+    The background-position property in CSS is mainly used to sets the initial position for the background image ie., it is used to set an image at a certain position. The position that is relative to the positioning layer, can be set by using the background-origin property.
+
+    9.Which property controls the image scroll in the background?
+
+    ANS:
+
+    scroll:	The background image will scroll with the page. This is default
+    fixed:	The background image will not scroll with the page
+    local	:The background image will scroll with the element's contents
+    initial:	Sets this property to its default value. Read about initial
+    inherit	:Inherits this property from its parent element. Read about inherit
+
+    10.Why should background and color be used as separate properties?
+
+    ANS:
+
+    Why background and color are the separate properties if they should always be set together? There are two reasons behind this: It enhances the legibility of style sheets. The background property is a complex property in CSS, and if it is combined with color, the complexity will further increase.
+
+    it enhances the legibility of style sheets. The background property is a complex property in CSS, and if it is combined with color, the complexity will further increase.
+
+    11.How to center block elements using CSS1?
+
+    ANS:
+
+    To centrally align the block elements, we can simply make use of the <center> tag. All the elements within the <center> tag will be centrally aligned.
+
+   Step 1: Define the external width – We need to define the external width. Block-level elements have the default width of 100% of the webpage, so for centering the block element, we need space around it. So for generating the space, we are giving it a width.
+
+   Step 2: Set the left-margin and the right-margin of the element to auto – Since we produced a remaining space by providing external width so now we need to align that space properly that’s why we should use margin property. Margin is a property that tells how to align a remaining space. So for centering the element you must set left-margin to auto and right-margin to auto.
+
+  12.How to maintain the CSS specifications?
+
+  ANS:
+
+  The CSS specifications are maintained by the World Wide Web Consortium (W3C). Internet media type (MIME type) text/css is registered for use with CSS by RFC 2318 (March 1998).
+
+  The World Wide Web Consortium (W3C), an international organization, is the primary standards body for the World Wide Web. A consortium founded by Tim Berners-Lee in 1994 and led by him, it brings together full-time staff from member organizations to work on developing World Wide Web standards.
+
+  It is possible to write CSS by itself, as well as within an HTML file. Insert the HTML file into it.
+
+  You will learn CSS fundamentals such as the box model, cascade and specificity, flexbox, grid, and z-index, in addition to CSS fundamentals. Along with these fundamentals, you will learn about functions, color types, gradient functions, logical properties, and inheritance, all of which will help you become a well-rounded front-end developer who is ready to work on any user interface.
+
+  13.What are the ways to integrate CSS as a web page?
+
+  ANS:
+
+  CSS may be added to HTML in three different ways. To style a single HTML element on the page, use Inline CSS in a style attribute. By adding CSS to the head section of our HTML document, we can embed an internal stylesheet. We can also connect to an external stylesheet that separates our CSS from our HTML
+
+  Inline - by using the style attribute inside HTML elements
+  Internal - by using a <style> element in the <head> section
+  External - by using a <link> element to link to an external CSS file
+
+  Inline CSS:
+  An inline CSS is used to apply a unique style to a single HTML element.
+
+  An inline CSS uses the style attribute of an HTML element.
+
+ Internal CSS:
+ An internal CSS is used to define a style for a single HTML page.
+
+ An internal CSS is defined in the <head> section of an HTML page, within a <style> element.
+
+ External CSS
+ An external style sheet is used to define the style for many HTML pages.
+  
+ To use an external style sheet, add a link to it in the <head> section of each HTML page
+
+14.What is embedded style sheets?
+
+ANS:
+
+An embedded style sheet is declared within the <head> element of an XHTML document. It applies to the whole document, rather than just one element. Each style declaration (or CSS rule) gets applied to everything in the document that matches that rule.
+
+  Embedded Stylesheet: It allows you to define styles for a particular HTML document as a whole in one place. This is done by embedding the <style></style> tags containing the CSS properties in the head of your document. Embedded style sheets are particularly useful for HTML documents that have unique style requirements from the rest of the documents in your project. 
+  
+  However, if the styles need to be applied across multiple documents, you should link to an external style sheet instead of using individual embedded style sheets. Using embedded stylesheets holds a distinct advantage over inline styles which only allow you to address one HTML element at a time. 
+
+  15.What are the external style sheets?
+
+  ANS:
+
+  An external style sheet is a separate CSS file that can be accessed by creating a link within the head section of the webpage. Multiple webpages can use the same link to access the stylesheet. The link to an external style sheet is placed within the head section of the page.
+
+  With an external style sheet, you can change the look of an entire website by changing just one file!
+
+ Each HTML page must include a reference to the external style sheet file inside the <link> element, inside the head section.
+
+ 16.What are the advantages and disadvantages of using external style sheets?
+
+ ANS:
+
+ Advantages of external CSS:
+
+ Easy for the user to customize the online page
+ It reduces the file transfer size.
+ It is less complex therefore the effort are significantly reduced.
+ It helps to form spontaneous and consistent changes.
+ The main advantage of CSS is that style is applied consistently across variety of sites. One instruction can control several areas which is advantageous.
+
+ Disadvantages of external CSS:
+
+ CSS, CSS 1 up to CSS3, result in creating of confusion among  web browsers.
+ After making the changes we need to confirm the compatibility if they appear. The similar change affects on all the browsers.
+ CSS works differently on different browsers. IE and Opera supports CSS as different logic.
+ There might be cross-browser issues while using CSS.
+ There are multiple levels which creates confusion for non-developers and beginners.
+     
+ 17.What is the meaning of the CSS selector?
+
+ ANS:
+
+ A CSS selector is the first part of a CSS Rule. It is a pattern of elements and other terms that tell the browser which HTML elements should be selected to have the CSS property values inside the rule applied to them.
+
+ type selectors – matching a specific element
+ class selectors – matching elements with a specific class
+ ID selectors – matching the element with a specific ID
+ universal selectors – matching any element
+
+ 18.What are the media types allowed by CSS?
+
+ ANS:
+ 
+ Media queries can be used to check many things, such as:
+
+ width and height of the viewport
+ width and height of the device
+ orientation (is the tablet/phone in landscape or portrait mode?)
+ resolution
+ Using media queries are a popular technique for delivering a tailored style sheet to desktops, laptops, tablets, and mobile phones (such as iPhone and Android phones).
+
+ ne very important specification made by style sheet is, on which media a web document will be presented; whether it is screen, paper, speech synthesizer, braille device etc.
+
+ 19.What is the rule selector?
+
+ ANS:
+
+ A table of instructions used by a controlled interface to determine what data is allowable and how the data is handled between interconnected systems.
+
+ Rule level:
+ As with individual Data Rules, this view provides insight into the exceptions to each rule within the rule set. For example, "record 1 did not meet rule A."
+Record level:
+ Looking across the entire record, this view provides insight into the cases where a record had an exception to one or multiple rules. For example, "record 1 did not meet rules A, B, and C."
+Source level:
+ Looking through the entire data source, this view provides summarized insight into how many records have one or multiple rule exceptions, what the mean number of record exceptions are, what the standard deviation is from the mean, and, when compared to a baseline run, whether the source has improved or degraded in quality.
+
+    
+
+
+
+
+
+
+
+    
+    
+     
+    
+  
+  
+   
+
+   
+   
+
+ 
