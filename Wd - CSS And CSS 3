@@ -2,7 +2,17 @@
 
 
       1.What are the benefits of using CSS?
-
+         1.  CSS plays an important role, by using CSS you simply got to specify a repeated style for element once & use it multiple times as because CSS will automatically apply the required styles.
+        2.  The main advantage of CSS is that style is applied consistently across variety of sites. One instruction can control several areas which is advantageous.
+        3.  Web designers needs to use few lines of programming for every page improving site speed.
+        4.  Cascading sheet not only simplifies website development, but also simplifies the maintenance as a change of one line of code affects the whole web site and maintenance time.
+        5.  It is less complex therefore the effort are significantly reduced.
+        6.  It helps to form spontaneous and consistent changes.
+        7.  CSS changes are device friendly. With people employing a batch of various range of smart devices to access websites over the web, there’s a requirement for responsive web design.
+        8.  It has the power for re-positioning. It helps us to determine the changes within the position of web elements who are there on the page.
+        9.  These bandwidth savings are substantial figures of insignificant tags that are indistinct from a mess of pages.
+        10. Easy for the user to customize the online page
+        11. It reduces the file transfer size.
       ANS:
 
       1) Faster Page Speed
@@ -29,9 +39,9 @@
 
      
        2.What are the disadvantages of CSS?
-
+     
        ANS:
-
+           disadvntages of css :
         CSS, CSS 1 up to CSS3, result in creating of confusion among web browsers.
         
         With CSS, what works with one browser might not always work with another. The web developers need to test for
@@ -55,6 +65,66 @@
      3.What is the difference between CSS2 and CSS3?
 
      ANS:
+        
+CSS	
+1	CSS is capable of positioning texts and objects. 
+
+2	Responsive designing is not supported in CSS	
+
+3	CSS cannot be split into modules.	
+
+4	Using CSS, we cannot build 3D animation and transformation.	
+
+5	CSS is very slow as compared to CSS3	
+
+6	In CSS we have set of standard colors and it uses basic color schemes only.	
+
+7	In CSS we can only use single text blocks.	
+
+8	CSS does not support media queries.	
+
+9	CSS codes are not supported by all types of modern browsers.	
+
+10	In CSS, designers have to manually develop rounded gradients and corners.	
+
+11	There is no special effect like shadowing text, text animation, etc. in CSS. The animation was coded in jQuery and JavaScript.	
+
+12	In CSS, the user can add background colors to list items and lists, set images for the list items, etc.	
+
+13	CSS was developed in 1996.	
+
+14	CSS is memory intensive.	
+
+
+CSS3
+
+1   On the other hand, CSS3 is capable of making the web page more attractive and takes less time to create. CSS3 is backward compatible with CSS.
+
+2   CSS3 is the latest version, hence it supports responsive design.
+
+3   Whereas CSS3 can be breakdown into modules.
+
+4   But in CSS3 we can perform all kinds of animation and transformations as it supports animation and 3D transformations.
+
+5   Whereas CSS3 is faster than CSS.
+
+6   Whereas CSS3 has a good collection of HSL RGBA, HSLA, and gradient colors.
+
+7   But in CSS3 we can use multi-column text blocks
+
+8   But CSS3 supports media queries
+
+9   Being the latest version, CSS3 codes are supported by all modern browsers.
+
+10  But CSS3 provides advanced codes for setting rounded gradients and corners
+
+11  CSS3 has many advance features like text shadows, visual effects, and a wide range of font styles and colors.
+
+12  Whereas CSS3 list has a special display property defined in it. Even list items also have counter reset properties.
+
+13  CSS3 is the latest version of CSS and was released in 2005.
+
+14  CSS3 memory consumption is low as compared to CSS.
      
 
 
@@ -256,7 +326,114 @@ Record level:
 Source level:
  Looking through the entire data source, this view provides summarized insight into how many records have one or multiple rule exceptions, what the mean number of record exceptions are, what the standard deviation is from the mean, and, when compared to a baseline run, whether the source has improved or degraded in quality.
 
-    
+
+• 20.  Create image gallery using display grid with responsive
+ans.
+<!DOCTYPE html>
+<html>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <h1>Responsive Image Grid</h1>
+  <p>Resize the browser window to see the responsive effect.</p>
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="https://images.pexels.com/photos/6187159/pexels-photo-6187159.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" style="width:100%">
+    <img src="https://images.pexels.com/photos/6525019/pexels-photo-6525019.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" style="width:100%">
+    <img src="https://images.pexels.com/photos/17919998/pexels-photo-17919998/free-photo-of-road-nature-clouds-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" style="width:100%">
+    <img src="https://images.pexels.com/photos/17893962/pexels-photo-17893962/free-photo-of-light-city-road-traffic.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width:100%">
+    <img src="https://images.pexels.com/photos/17589784/pexels-photo-17589784/free-photo-of-display-of-old-fashioned-clocks-and-alarm-clocks.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" style="width:100%">
+    <img src="https://images.pexels.com/photos/4148017/pexels-photo-4148017.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" style="width:100%">
+    <img src="https://images.pexels.com/photos/11897866/pexels-photo-11897866.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://images.pexels.com/photos/7525051/pexels-photo-7525051.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" style="width:100%">
+    <img src="https://images.pexels.com/photos/17802395/pexels-photo-17802395/free-photo-of-woman-hands-holding-camera.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" style="width:100%">
+    <img src="https://images.pexels.com/photos/12825195/pexels-photo-12825195.png?auto=compress&cs=tinysrgb&w=1600&lazy=load" style="width:100%">
+    <img src="https://images.pexels.com/photos/17601814/pexels-photo-17601814/free-photo-of-cars-in-a-city-at-night.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" style="width:100%">
+    <img src="https://images.pexels.com/photos/16945753/pexels-photo-16945753/free-photo-of-dog-in-water.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" style="width:100%">
+    <img src="https://images.pexels.com/photos/16407227/pexels-photo-16407227/free-photo-of-man-in-a-leather-jacket-with-his-head-tilted-back.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="https://images.pexels.com/photos/17781600/pexels-photo-17781600/free-photo-of-portrait-of-a-woman-looking-up.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" style="width:100%">
+    <img src="https://i.pinimg.com/236x/11/56/db/1156db53f8b9a276fa25bb1e7ed789e2.jpg" style="width:100%">
+    <img src="https://i.pinimg.com/236x/65/1a/70/651a7069645597422931819d36b52e0e.jpg" style="width:100%">
+    <img src="https://i.pinimg.com/236x/9d/14/5e/9d145e8592216e5a02d2c50b870e9e5e.jpg" style="width:100%">
+    <img src="https://i.pinimg.com/564x/de/bd/11/debd11741e7aa018fc661c87b9137753.jpg" style="width:100%">
+    <img src="https://i.pinimg.com/236x/15/73/bf/1573bf91f8e75df0faf2f57657a374e3.jpg" style="width:100%">
+    <img src="" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://i.pinimg.com/236x/e9/78/be/e978be1d9948251dea2b080c1972afba.jpg" style="width:100%">
+    <img src="https://i.pinimg.com/236x/d8/af/20/d8af201fe2cd9df8a4e8b0e2f8551511.jpg" style="width:100%">
+    <img src="https://i.pinimg.com/236x/05/b4/bc/05b4bc24d05954fc4d4a983eaad5c3cc.jpg" style="width:100%">
+    <img src="https://i.pinimg.com/236x/b0/05/83/b0058378a26c252e39381f1c5ea4e669.jpg" style="width:100%">
+    <img src="https://i.pinimg.com/236x/77/c0/71/77c07190f6adfafaeb7e05ce6936ebf3.jpg" style="width:100%">
+    <img src="https://i.pinimg.com/236x/33/5c/4a/335c4a4162718c4da6062f82de897354.jpg" style="width:100%">
+  </div>
+</div>
+
+</body>
+</html>
 
 
 
